@@ -6,13 +6,13 @@
 
 #### By **Adela Darmansyah**
 
-[Component Life Cycle Methods](#Component-Life-Cycle-Methods) | [Mounting](#Mounting) | [Updating](#Updating) | [Unmounting](#Unmounting) | [AJAX](#AJAX)
+[React Component Lifecycle Methods](#React-Component-Lifecycle-Methods) | [Mounting](#Mounting) | [Updating](#Updating) | [Unmounting](#Unmounting) | [AJAX](#AJAX) | [Redux-Thunk](#Redux-Thunk)
 
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/ayohana/react-with-api/master?color=%23DE98B2&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/ayohana/react-with-api?color=%23DE98B2&style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/ayohana/react-with-api?color=%23DE98B2&style=for-the-badge)
 
 </div>
 
-## Component Life Cycle Methods
+## React Component Lifecycle Methods
 
 **Each component in React has a lifecycle** which you can monitor and manipulate during its three main phases: Mounting, Updating and Unmounting.
 
@@ -358,3 +358,15 @@ AJAX allows web pages to be updated asynchronously by exchanging data with a web
 ### How AJAX Works
 
 ![Diagram of how AJAX works](./public/img_ajax.gif)
+
+## Redux-Thunk
+
+**A middleware library for Redux.**
+
+**Redux actions are synchronous while API calls are asynchronous.** To manage this issue, we need to use a Redux middleware. For this project, we will use Redux-Thunk.
+
+### What is Middleware?
+
+There's no exact definition in computer programming and it can mean many different things. It's often referred to as the "glue" that allows different applications or components to communicate.
+
+**Handling async code is a common use case for Redux middleware**. However, we also need to use middleware any time we might have other side effects. For example, if we wanted to log certain actions, we'd use middleware for that, too, because the process of logging data (for example, to the console or to a server file) is a side effect.
