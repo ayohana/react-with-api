@@ -8,7 +8,7 @@
 
 [Component Life Cycle Methods](#Component-Life-Cycle-Methods) | [Mounting](#Mounting) | [Updating](#Updating) | [Unmounting](#Unmounting) | [AJAX](#AJAX)
 
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/ayohana/help-queue/master?color=%23DE98B2&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/ayohana/help-queue?color=%23DE98B2&style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/ayohana/help-queue?color=%23DE98B2&style=for-the-badge)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/ayohana/react-with-api/master?color=%23DE98B2&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/ayohana/react-with-api?color=%23DE98B2&style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/ayohana/react-with-api?color=%23DE98B2&style=for-the-badge)
 
 </div>
 
