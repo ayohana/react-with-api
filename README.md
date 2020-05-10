@@ -370,3 +370,26 @@ AJAX allows web pages to be updated asynchronously by exchanging data with a web
 There's no exact definition in computer programming and it can mean many different things. It's often referred to as the "glue" that allows different applications or components to communicate.
 
 **Handling async code is a common use case for Redux middleware**. However, we also need to use middleware any time we might have other side effects. For example, if we wanted to log certain actions, we'd use middleware for that, too, because the process of logging data (for example, to the console or to a server file) is a side effect.
+
+### Redux Thunk vs Custom Middleware
+
+> `````
+> function createThunkMiddleware(extraArgument) {
+>   return ({ dispatch, getState }) => (next) => (action) => {
+>     if (typeof action === 'function') {
+>       return action(dispatch, getState, extraArgument);
+>     }
+> 
+>     return next(action);
+>   };
+> }
+> 
+> const thunk = createThunkMiddleware();
+> thunk.withExtraArgument = createThunkMiddleware;
+> 
+> export default thunk;
+> `````
+
+Source code: [Redux Thunk](https://github.com/reduxjs/redux-thunk/blob/master/src/index.js)
+
+That's all Redux Thunk really is. It looks pretty similar to our custom middleware function. It uses **currying** to return a series of functions. And by doing so, we can use code with side effects alongside our reducers, which only allow for pure actions. **Each piece of middleware returns an action, dispatches it, and then moves on to the next piece of middleware - or resumes the action - with `next()`.**
